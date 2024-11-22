@@ -32,4 +32,3 @@ class RouteStopController extends Controller
         return response()->json(['message' => 'Остановка добавлена к маршруту', 'data' => $routeStop], 201);
     }
 }
-

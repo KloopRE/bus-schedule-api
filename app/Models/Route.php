@@ -18,4 +18,3 @@ class Route extends Model
                     ->withPivot('order');
     }
 }
-

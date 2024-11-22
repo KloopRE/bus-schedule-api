@@ -23,4 +23,3 @@ class RouteStop extends Model
         return $this->belongsTo(Stop::class);
     }
 }
-

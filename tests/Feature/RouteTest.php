@@ -83,4 +83,3 @@ class RouteTest extends TestCase
         $this->assertDatabaseMissing('routes', ['id' => $route->id]);
     }
 }
-

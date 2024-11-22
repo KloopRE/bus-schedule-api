@@ -63,5 +63,3 @@ class RouteController extends Controller
         return response()->json(['message' => 'Route not found'], 404);
     }
 }
-
-

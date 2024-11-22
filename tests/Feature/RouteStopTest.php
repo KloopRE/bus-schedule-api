@@ -47,4 +47,3 @@ class RouteStopTest extends TestCase
         $response->assertJsonValidationErrors(['route_id', 'stop_id', 'order']);
     }
 }
-

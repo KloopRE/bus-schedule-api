@@ -18,5 +18,3 @@ class Stop extends Model
                     ->withPivot('order');
     }
 }
-
-

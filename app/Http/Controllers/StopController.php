@@ -67,4 +67,3 @@ class StopController extends Controller
     }
 
 }
-
