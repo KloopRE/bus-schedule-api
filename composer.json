@@ -1,0 +1,26 @@
+{
+    "name": "kloopre/bus-schedule-api",
+    "description": "API для отображения расписания рейсовых автобусов",
+    "type": "library",
+	"require": {
+        "laravel/laravel": "^11.3"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+			"App\\": "app/",
+			"App\\Http\\Controllers\\": "app/Http/Controllers",
+			"Database\\Seeders\\": "database/seeders/",
+			"Database\\Factories\\": "database/factories/",
+			"Tests\\": "tests/",
+			"Tests\\Feature\\": "tests/Feature"
+        }
+    },
+    "authors": [
+        {
+            "name": "Поздеев И.А.",
+            "email": "ivanpozdeev2015@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
