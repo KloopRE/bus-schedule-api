@@ -86,13 +86,11 @@
         <h2>Добавить расписание</h2>
         <label for="route-id">Маршрут:</label>
         <select id="route-id" name="route_id" required>
-            <!-- Эти опции должны заполняться динамически -->
             <option value="" disabled selected>Выберите маршрут</option>
         </select>
 
         <label for="stop-id">Остановка:</label>
         <select id="stop-id" name="stop_id" required>
-            <!-- Эти опции должны заполняться динамически -->
             <option value="" disabled selected>Выберите остановку</option>
         </select>
 
@@ -109,13 +107,11 @@
     <form id="find-bus-form">
         <label for="from-stop">От остановки:</label>
         <select id="from-stop" name="from" required>
-            <!-- Эти опции будут заполняться динамически -->
             <option value="" disabled selected>Выберите исходную остановку</option>
         </select>
 
         <label for="to-stop">До остановки:</label>
         <select id="to-stop" name="to" required>
-            <!-- Эти опции будут заполняться динамически -->
             <option value="" disabled selected>Выберите конечную остановку</option>
         </select>
 
@@ -358,9 +354,9 @@
             const routeDiv = document.createElement('div');
             routeDiv.classList.add('route-result');
             routeDiv.innerHTML = `
-                <h4>Маршрут: ${route.route_name}</h4> <!-- Заменить на реальное поле маршрута -->
-                <p>От: ${route.from_stop} <br> До: ${route.to_stop}</p> <!-- Заменить на реальные поля остановок -->
-                <p>Ближайшие прибытия: ${route.arrival_times.join(', ')}</p> <!-- Пример с ближайшими временем -->
+                <h4>Маршрут: ${route.route_name}</h4>
+                <p>От: ${route.from_stop} <br> До: ${route.to_stop}</p>
+                <p>Ближайшие прибытия: ${route.arrival_times.join(', ')}</p>
             `;
             resultsDiv.appendChild(routeDiv);
         });
